@@ -6,7 +6,7 @@ A two-page personal CV and portfolio site.
 - **Portfolio page** (`portfolio.html`): project cards with descriptions
 
 ## Built with
-HTML, Bootstrap 5, custom CSS (`css/design.css`) and JavaScript (`js/basic.js`).
+HTML, Bootstrap 5 and custom CSS (`css/design.css`) .
 
 ## Running it
 Open `index.html` in a browser. To put it online for free, go to **Settings > Pages** in this repo, choose the `main` branch and save.
