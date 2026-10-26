@@ -9,4 +9,4 @@ A two-page personal CV and portfolio site.
 HTML, Bootstrap 5 and custom CSS (`css/design.css`) .
 
 ## Running it
-Open `index.html` in a browser. To put it online for free, go to **Settings > Pages** in this repo, choose the `main` branch and save.
+Open `index.html` in a browser.
