@@ -1,0 +1,184 @@
+/* General look of the whole page */
+body {
+    font-family: 'Nunito', sans-serif; /* Change text style */
+    background-color: #e8eff1; /* Background color */
+    line-height: 1.6; /* Space between lines */
+    margin: 0; /* No space around the edges */
+    padding: 20px; /* Space inside the edges */
+}
+
+/* Top bar and bottom bar look */
+#main-header nav, footer {
+    background: #005f73; /* Color of top and bottom bars */
+    color: #ffffff; /* Text color */
+    padding: 10px; /* Space inside bars */
+}
+
+/*design of header text*/
+#main-header ul {
+    list-style: none; /* No bullets for list */
+    padding: 0; /* No space around list */
+    display: flex; /* Items all put in a row */
+    justify-content: center; /* Items spread out in center */
+}
+
+/*design of header text*/
+#main-header ul li {
+    padding-top: 5px; /* Space on top of list items */
+    flex:1; /* Each item takes equal space */
+    text-align: center; /* Text in the middle */
+    font-size: 1.5rem; /* Bigger text */
+}
+
+/*design of header text*/
+#main-header ul li a {
+    color: #ffffff; /* Link color */
+    text-decoration: none; /* No underline */
+    transition: color 0.3s ease; /* Color change smoothly */
+}
+
+/*design of header text when clicked or hovered over*/
+#main-header ul li a:hover,
+#main-header ul li a.reactive {
+    color: #ffbf69; /* Color when you hover or click */
+}
+
+/*design all header texts text*/
+h1, h2, h3, h6 {
+    color: #005f73; /* Text color for titles */
+    font-weight: 700; /* Bold text */
+}
+
+/*design of footer*/
+footer {
+    display: flex;
+    justify-content: center; /* Centers the links */
+    align-items: center;     /* Aligns them vertically */
+    gap: 200px;               /* Space between the links */
+}
+
+
+/*design of footer quotes*/
+blockquote {
+    font-style: italic; /* Slanted text style */
+    display: flex;
+    align-items: center;
+    margin: 0;
+    gap: 8px;
+}
+
+/*design of home screen ------------------------------------------------------------------------------*/
+
+
+/* Makes boxes for content */
+.boxes {
+    display: flex; /* Items next to each other */
+    flex-wrap: wrap; /* Items can go to next line */
+    gap: 30px; /* Space between items */
+    justify-content: space-evenly; /* Items spread out evenly */
+    padding-bottom: 10px; /* Space at the bottom inside the box */
+}
+
+/* styling for right and left boxes */
+.right, .left {
+    flex-basis: 45%; /* Takes up less space */
+    background: #ffffff; /* Background color */
+    padding: 20px; /* Space inside */
+    margin-top: 15px; /* Space on top */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+/* Layout for the about-me section */
+.about-me {
+    display: flex; /* Items next to each other */
+    gap: 40px; /* Space between items */
+}
+
+/* Table layout for languages */
+.languages {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    table-layout: fixed; /* Fixed table layout */
+    border-collapse: collapse; /* No space between borders */
+}
+
+/* Center text and images in table cells */
+.languages td {
+    text-align: center; /* Center text */
+    padding: 10px; /* Space inside cells */
+}
+
+/* Center images in languages section */
+.languages img {
+    display: block; /* Block display for centering */
+    margin: 0 auto; /* Auto margins for horizontal centering */
+}
+
+.languages span {
+    display: block; /* Block display for each line */
+}
+
+/* Layout for interests list */
+.interests ul {
+    display: flex; /* Items next to each other */
+    flex-wrap: wrap; /* Allow wrapping to next line */
+    justify-content: space-between; /* Space between items */
+}
+
+/* Portfolio sections layout ---------------------------------------------------------------*/
+.portfolios {
+    display: flex; /* Items next to each other */
+    flex-wrap: wrap; /* Allow wrapping to next line */
+    gap: 20px; /* Space between items */
+    justify-content: space-evenly; /* Space evenly distributed */
+    padding-bottom: 10px; /* Space at the bottom */
+}
+
+/* Individual portfolio items */
+.portfolio-1, .portfolio-2, .portfolio-3 {
+    flex-basis: 45%; /* Takes up less space */
+    background: #ffffff; /* Background color */
+    padding: 20px; /* Space inside */
+    margin-top: 15px; /* Space on top */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    text-align: center; /* Center text */
+}
+
+/* Makes the page look good on small screens */
+@media (max-width: 768px) {
+    .boxes {
+        flex-direction: column; /* Items on top of each other */
+        gap: 10px; /* Reduce space between items */
+        padding-bottom: 5px; /* Reduce bottom padding */
+    }
+
+    #message, #details, .right, .left, .portfolio-1, .portfolio-2, .portfolio-3 {
+        flex-basis: 100%; /* Takes full width */
+        padding: 15px; /* Adjust padding for smaller screens */
+        margin-top: 10px; /* Reduce the margin on top */
+    }
+
+    #main-header ul {
+        flex-direction: column; /* Items on top of each other */
+        align-items: center; /* Centered horizontally */
+        padding: 10px 0; /* Add some padding around the menu */
+    }
+
+    #main-header ul li {
+        margin: 10px 0; /* Increase space between list items for readability */
+    }
+
+    footer section {
+        padding: 10px 5px; /* Adjust padding for better space management */
+    }
+
+    h1, h2, h3, h6 {
+        font-size: 1.2rem; /* Decrease header font size */
+    }
+
+    body {
+        font-size: 0.9rem; /* Slightly reduce body text size */
+    }
+}
